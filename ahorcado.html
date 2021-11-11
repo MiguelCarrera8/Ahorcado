@@ -87,6 +87,7 @@
                 {
                     document.getElementById(letras[i]).disabled = true;  
                 }
+                document.getElementById("reint").disabled = false;
                 document.getElementById("ganador").innerHTML = "Has ganado, pulse el botón Jugar para volver a jugar.";
             }
 
@@ -99,6 +100,7 @@
                 {
                     document.getElementById(letras[i]).disabled = true; 
                 }
+                document.getElementById("reint").disabled = false;
                 document.getElementById("ganador").innerHTML = "Lo siento, no tienes más intentos, la palabra era " + palabra + ".<br>Pulse el boton de Jugar para volver a jugar.";
                 
             }
@@ -168,7 +170,7 @@
         
     </table>
     
-    <button onclick="recargar()" id="reint" style="height: 50px; width: 527px;text-align: center;">Jugar de nuevo</button>
+    <button onclick="recargar()" id="reint" style="height: 50px; width: 527px;text-align: center;" disabled>Jugar de nuevo</button>
 
     
     <h1 id="oculta"></h1>
