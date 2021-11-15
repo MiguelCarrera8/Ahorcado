@@ -88,7 +88,7 @@
                     document.getElementById(letras[i]).disabled = true;  
                 }
                 document.getElementById("reint").disabled = false;
-                document.getElementById("ganador").innerHTML = "Has ganado, pulse el botón Jugar para volver a jugar.";
+                document.getElementById("ganador").innerHTML = "Has ganado, pulse el botón Jugar de nuevo para volver a jugar.";
             }
 
 
@@ -101,7 +101,7 @@
                     document.getElementById(letras[i]).disabled = true; 
                 }
                 document.getElementById("reint").disabled = false;
-                document.getElementById("ganador").innerHTML = "Lo siento, no tienes más intentos, la palabra era " + palabra + ".<br>Pulse el boton de Jugar para volver a jugar.";
+                document.getElementById("ganador").innerHTML = "Lo siento, no tienes más intentos, la palabra era " + palabra + ".<br>Pulse el boton de Jugar de nuevo para volver a jugar.";
                 
             }
 
@@ -114,6 +114,7 @@
         //La funcion recargar se ejecuta al pulsar el boton Jugar de nuevo y recarga la página
 
         function recargar(){
+            document.getElementById("reint").disabled = true;
             window.location.reload();
         }
 
