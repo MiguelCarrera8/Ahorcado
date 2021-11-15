@@ -26,12 +26,13 @@
 
         let letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n", "m", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]; 
         
-        document.getElementById("reint").disabled = true;
+       
 
 
         //iniciamos la función que mostrará la palabra oculta al cargar la página
 
         onload = function(){
+            document.getElementById("reint").disabled = true;
             for(let i = 0; i<palabra.length; i++){
             oculta += "_ ";
             }
