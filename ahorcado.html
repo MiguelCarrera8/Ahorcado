@@ -25,6 +25,8 @@
         let palabraAcertada = new Map();
 
         let letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "n", "m", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]; 
+        
+        document.getElementById("reint").disabled = true;
 
 
         //iniciamos la función que mostrará la palabra oculta al cargar la página
@@ -114,7 +116,7 @@
         //La funcion recargar se ejecuta al pulsar el boton Jugar de nuevo y recarga la página
 
         function recargar(){
-            document.getElementById("reint").disabled = true;
+            document.getElementById("reint").disabled = false;
             window.location.reload();
         }
 
